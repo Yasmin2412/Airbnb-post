@@ -64,11 +64,29 @@ app.get("/listings/:id/edit", async (req, res) => {
 });
 
 //Update Route
-app.put("/listings/:id", async (req, res) => {
+// Define wrapAsync function
+function wrapAsync(fn) {
+  return function (req, res, next) {
+    fn(req, res, next).catch(next);
+  };
+}
+//Update Route
+app.put("/listings/:id", wrapAsync(async (req, res, next) => {
   let { id } = req.params;
-  await Listing.findByIdAndUpdate(id, { ...req.body.listing });
+  let { title, image, description, location, country, price } = req.body.listing;
+  let newL = await Listing.findByIdAndUpdate(id, {
+    title: title,
+    description: description,
+    location: location,
+    country: country,
+    price: price,
+    'image.url': image
+  }, { new: true });
+  console.log(newL);
+  req.flash("success", "Listing Updated!");
   res.redirect(`/listings/${id}`);
-});
+}));
+
 
 //Delete Route
 app.delete("/listings/:id", async (req, res) => {
