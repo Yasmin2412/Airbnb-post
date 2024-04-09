@@ -18,6 +18,18 @@ const listingSchema = new Schema({
     location : String,
     country : String,
 
+    reviews: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Review",
+        }
+    ],
+
+    owner: 
+        {
+        type: Schema.Types.ObjectId,
+        ref: "user",
+        },
 
 });
 
