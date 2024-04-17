@@ -6,6 +6,7 @@ const { reviewSchema } = require("../schema.js");
 const Review = require("../models/review.js");
 const Listing = require("../models/listing.js");
 
+
 const validateReview = (req, res, next) => {
     let {error} =  reviewSchema.validate(req.body);
     if(error){
@@ -31,9 +32,7 @@ router.post("/", validateReview, wrapAsync(async(req, res) =>{
  
  }));
  
- 
- 
- 
+
  
  // Delete Review Route
  
