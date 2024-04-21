@@ -10,8 +10,8 @@ const listingSchema = new Schema({
     description : String,
     image:{ filename:String,
         url:{type:String,
-        default:"https://www.istockphoto.com/photo/a-large-gray-craftsman-new-construction-house-with-a-landscaped-yard-and-leading-gm1448386210-485915364?utm_campaign=category_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fimages&utm_medium=affiliate&utm_source=unsplash&utm_term=images%3A%3A%3A",
-        Set:(v)=> v==="" ? "https://www.istockphoto.com/photo/a-large-gray-craftsman-new-construction-house-with-a-landscaped-yard-and-leading-gm1448386210-485915364?utm_campaign=category_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fimages&utm_medium=affiliate&utm_source=unsplash&utm_term=images%3A%3A%3A" : v
+        default:"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxha2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        Set:(v)=> v==="" ? "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxha2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" : v
        
     
     }},
@@ -29,7 +29,7 @@ const listingSchema = new Schema({
     owner: 
         {
         type: Schema.Types.ObjectId,
-        ref: "user",
+        ref: "User",
         },
 
 });
