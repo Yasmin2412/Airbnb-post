@@ -31,40 +31,47 @@
   }
   #map {
     height: 400px; /* Set a default height for the map container */
-    width: 100%; /* Make the map container fill the parent element */
+    width: 80vh /* Make the map container fill the parent element */
   }
   </style>
 
-<div class="row mt-3">
-    <div class="col-8 card col-12 col-md-5 ms-md-3 mb-3 border border-white">
-        <h3>Listings Details</h3>
-        <div class="card col-6 show-card listing-card card col-12 col-md-5 ms-md-3 mb-3">
-            <img src="<%= listing.image.url %>" class="card-img-top show-img img-fluid" alt="listing_img">
-            <div class="card-body">
-                <p class="card-text">
-                    <b><%= listing.title %></b><br> </p>
-                    <p><b>Owned By:-</b><i><%= listing.owner.username %></i></p>
-                   <p><%= listing.description %></p> 
-                    &#8377;<%= listing.price.toLocaleString("en-IN") %><br>
-                    <%= listing.location %><br>
-                    <%= listing.country %><br>
+  <div class="row mt-3">
+    <div class="col-md-8 mx-auto border border-white">
+      <h3>Listings Details</h3>
+      <div class="card  show-card listing-card card  col-md-6 ">
+        <img src="<%= listing.image.url %>" class="card-img-top show-img img-fluid" alt="listing_img">
+        <div class="card-body">
+          <p class="card-text">
+            <b>
+              <%= listing.title %>
+            </b><br>
+          </p>
+          <p><b>Owned By:-</b><i>
+              <%= listing.owner.username %>
+            </i></p>
+          <p>
+            <%= listing.description %>
+          </p>
+          &#8377;<%= listing.price.toLocaleString("en-IN") %><br>
+            <%= listing.location %><br>
+              <%= listing.country %><br>
                 </p>
-            </div>
         </div>
-        <br>
+      </div>
+      <br>
     </div>
-</div>
+  </div>
 
-<% if(currUser && currUser._id.equals(listing.owner._id)) { %>
-  <div class="btns">
+  <% if(currUser && currUser._id.equals(listing.owner._id)) { %>
+    <div class="btns col-md-8 mx-auto">
       <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark m-3 edit-btn mb-5">Edit</a>
       <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
-          <button class="btn btn-dark mb-5 m-3">Delete</button>
+        <button class="btn btn-dark mb-5 m-3">Delete</button>
       </form>
-  </div>
-  <% } %>
+    </div>
+    <% } %>
 
-<div class="col-8 mb-3 m-3">
+<div class="col-md-8 mx-auto mb-3 m-3">
 
   <% if(currUser) { %>
   <h4>Leave a Review</h4>
@@ -75,7 +82,7 @@
       <label for="rating" class="form-label">Rating</label>
       <input type="range" min="1" max="5" id="rating" name="review[rating]" class="form-range">
     </div> -->
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-3" style="width: fit-content;">
       <label for="rating" class="form-label">Rating</label>
     <fieldset class="starability-slot">
       <input type="radio" id="no-rate" class="input-no-rate" 
@@ -125,12 +132,12 @@
  <% } %>
 </div>
 
-<div class="col-12 col-md-5 ms-md-3 mb-3">
+<div class=" mx-auto col-md-8">
   <hr>
   <h3>Where you’ll be</h3>
-  <div id="map">
+  <div id="map" class="mb-3">
   </div>
-  </div>
+</div>
 </div>
 
 <script src="/css/js/map.js"></script>
