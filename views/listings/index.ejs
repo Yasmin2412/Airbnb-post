@@ -14,6 +14,32 @@
     opacity: 0.7;
   }
 
+  /* Media query for screens less than 460px */
+  @media (max-width: 460px) {
+    .filter {
+      margin-right: 0.2rem;
+      margin-top: 1rem; /* Adjust margin-top for smaller screens */
+    }
+    /* Example of changing icon size */
+    .filter i {
+      font-size: 20px; /* Adjust icon size as needed */
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .filter {
+      margin-right: 0.1rem;
+      margin-top: 0.5rem; /* Adjust margin-top for smaller screens */
+    }
+    /* Example of changing icon size */
+    .filter i {
+      font-size: 15px; /* Adjust icon size as needed */
+    }
+  }
+
+ 
+
+
   .filter:hover {
     opacity: 1;
     cursor: pointer;
@@ -34,18 +60,29 @@
     display: flex;
   }
   /* Hide .tax-switch on screens smaller than 768px (phones and smaller tablets) */
-@media only screen and (max-width: 767px) {
-  .tax-switch {
-    display: none;
+ 
+  .tax-switch .form-check-input {
+    margin-right: 0.5rem; /* Adds margin to the right of the checkbox */
   }
-}
-
+  
+  .tax-switch .form-check-label {
+    margin-left: 0.5rem; /* Adds margin to the left of the label */
+  }
+  
+  .tax-switch {
+    /* Default styles */
+    padding: 0.5rem;
+    margin-left: 0; /* Set margin-left to 0 by default */
+  
+    /* Media query for screens greater than 400px */
+    @media (min-width: 500px) {
+      padding: 1rem;
+      margin-left: 5rem;
+    }
+  }
+  
 /* Hide .tax-switch on screens between 768px and 1024px (larger tablets) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .tax-switch {
-    display: none;
-  }
-}
+ 
 /* Media query for small screens like phones */
 @media only screen and (max-width: 767px) {
   /* Collapse the filter icon */
@@ -124,7 +161,7 @@
               id="flexSwitchCheckDefault">
           <label 
               class="form-check-label" 
-              for="flexSwitchCheckDefault">Display Taxes
+              for="flexSwitchCheckDefault">Taxes
           </label>
         </div>
       </div>
