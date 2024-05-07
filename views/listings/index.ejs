@@ -25,17 +25,34 @@
       font-size: 25px; /* Adjust icon size as needed */
     }
   }
-  @media (min-width: 400px) {
+
+  @media (min-width: 401px) and (max-width: 460px) {
+    .filter {
+      margin-right: 0.9rem;
+      margin-top: 1rem; /* Adjust margin-top for smaller screens */
+    }
+    /* Example of changing icon size */
+    .filter i {
+      font-size: 25px; /* Adjust icon size as needed */
+    }
+  }
+
+
+  @media (max-width: 400px) {
     .filter {
       margin-right: 0.3rem;
-      margin-top: 1rem;
-      margin-left: 1rem; /* Adjust margin-top for smaller screens */
+      margin-top: 0.5rem;
+       /* Adjust margin-top for smaller screens */
     }
     /* Example of changing icon size */
     .filter i {
       font-size: 20px; /* Adjust icon size as needed */
     }
   }
+
+ 
+
+
   @media (max-width: 350px) {
     .filter {
       margin-right: 0.1rem;
@@ -48,7 +65,9 @@
   }
 
  
-
+  .filter i {
+    font-size: 30px; /* Adjust icon size as needed */
+  }
 
   .filter:hover {
     opacity: 1;
@@ -65,7 +84,7 @@
     border-radius:  1rem;
     height: 3rem;
     padding: 1rem;
-    margin-left: 5rem;
+    margin-left: 0;
     align-items: center;
     display: flex;
   }
@@ -82,12 +101,13 @@
   .tax-switch {
     /* Default styles */
     padding: 0.5rem;
-    margin-left: 0;
-    margin-right: 0; /* Set margin-left to 0 by default */
+   
+     /* Set margin-left to 0 by default */
   
     /* Media query for screens greater than 400px */
-    @media (min-width: 500px) {
+    @media (min-width: 850px) {
       padding: 1rem;
+      margin-left: 8rem;
      
     }
   }
@@ -109,6 +129,8 @@
     display: none;
   }
 }
+/* Media query for tablets */
+ 
 </style>
 
 
