@@ -22,10 +22,20 @@
     }
     /* Example of changing icon size */
     .filter i {
+      font-size: 25px; /* Adjust icon size as needed */
+    }
+  }
+  @media (min-width: 400px) {
+    .filter {
+      margin-right: 0.3rem;
+      margin-top: 1rem;
+      margin-left: 1rem; /* Adjust margin-top for smaller screens */
+    }
+    /* Example of changing icon size */
+    .filter i {
       font-size: 20px; /* Adjust icon size as needed */
     }
   }
-  
   @media (max-width: 350px) {
     .filter {
       margin-right: 0.1rem;
@@ -72,12 +82,13 @@
   .tax-switch {
     /* Default styles */
     padding: 0.5rem;
-    margin-left: 0; /* Set margin-left to 0 by default */
+    margin-left: 0;
+    margin-right: 0; /* Set margin-left to 0 by default */
   
     /* Media query for screens greater than 400px */
     @media (min-width: 500px) {
       padding: 1rem;
-      margin-left: 5rem;
+     
     }
   }
   
