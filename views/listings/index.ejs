@@ -2,83 +2,82 @@
   <style>
     #filters {
       display: flex;
-      /* flex-wrap: wrap; */
+      flex-wrap: nowrap;
       width: 100% !important;
       align-items: center;
       height: 100px !important;
-      overflow: scroll;
-    }
-    #filters a {
+      overflow: hidden; /* Change from scroll to hidden */
+  }
+  
+  #filters a {
       color: black;
       text-decoration: none;
-    }
-    .filter {
+  }
+  
+  .filter {
       text-align: center;
       margin-right: 2rem;
       margin-top: 2rem;
       opacity: 0.7;
-    }
-
-    .filter:hover {
+  }
+  
+  .filter:hover {
       opacity: 1 !important;
       cursor: pointer;
       transform: scale(1.05) !important;
       transition: 100ms ease all !important;
-    }
-
-    .filter p {
+  }
+  
+  .filter p {
       font-size: 0.95rem;
-    }
-
-    .tax-info {
+  }
+  
+  .tax-info {
       display: none;
-
-    }
-
-    .tax-toggle {
+  }
+  
+  .tax-toggle {
       border: 1px solid black;
       border-radius: 1rem;
       height: 3.58rem;
       padding: 1rem;
-      /* margin-left: 3rem; */
       display: flex;
       min-width: 250px;
       width: fit-content;
       margin-top: 0.8rem;
       align-items: center;
-    }
-    #filters .filter i {
+  }
+  
+  #filters .filter i {
       font-size: 1em; /* Adjust the size as needed */
   }
- 
-
-#filters .filter {
-    text-align: center;
-    padding: 10px;
-     
-    transition: transform 0.3s ease;
-}
-
-#filters .filter:hover {
-    transform: scale(1.05);
-}
-
-#filters .filter i {
-    font-size: 1.4em; /* Adjust the size as needed */
-    color: #e7131a; /* Change the color if needed */
-}
-
-#filters .filter p {
-    margin-top: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    color: #333; /* Change the text color if needed */
-}
   
-
-.selected-filter {
-border-bottom: 3px solid #683193; /* Adjust the styling as needed */
-    }
+  #filters .filter {
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s ease;
+  }
+  
+  #filters .filter:hover {
+      transform: scale(1.05);
+  }
+  
+  #filters .filter i {
+      font-size: 1.4em; /* Adjust the size as needed */
+      color: #e7131a; /* Change the color if needed */
+  }
+  
+  #filters .filter p {
+      margin-top: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #333; /* Change the text color if needed */
+  }
+  
+  .selected-filter {
+      border-bottom: 3px solid #683193; /* Adjust the styling as needed */
+  }
+  
   </style>
   <div id="filters">
     <a href="/listings/filter/1">
