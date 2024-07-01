@@ -6,7 +6,14 @@
       width: 100% !important;
       align-items: center;
       height: 100px !important;
-      overflow: hidden; /* Change from scroll to hidden */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      overflow-y: hidden; /* Prevent vertical scrolling */
+      -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+      scrollbar-width: none;  /* Hide scrollbar in Firefox */
+  }
+  
+  #filters::-webkit-scrollbar {
+      display: none;  /* Hide scrollbar in Chrome, Safari, and Opera */
   }
   
   #filters a {
@@ -77,6 +84,7 @@
   .selected-filter {
       border-bottom: 3px solid #683193; /* Adjust the styling as needed */
   }
+  
   
   </style>
   <div id="filters">
