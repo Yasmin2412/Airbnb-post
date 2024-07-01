@@ -3,14 +3,20 @@ const router = express.Router();
 const Listing = require("../models/listing.js");
 const wrapAsync = require("../utils/wrapAsync.js");
 const { listingSchema } = require("../schema.js");
-const ExpressError = require("../utils/ExpressError.js");
+ 
+ 
 const {isLoggedIn, isOwner, validateListing} = require("../middleware.js");
 const lisitngController = require("../controllers/listing.js");
 const multer = require("multer"); 
 const {storage} = require("../cloudConfig.js");
 const upload = multer({ storage });
 
+
+
+router.get("/filter/:id",wrapAsync(listingController.filter));
+router.get("/search", wrapAsync(listingController.search));
  
+
 //Index Route or Create Route
 router          
     .route("/")

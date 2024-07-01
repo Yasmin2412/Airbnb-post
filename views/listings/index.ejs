@@ -50,14 +50,12 @@
     #filters .filter i {
       font-size: 1em; /* Adjust the size as needed */
   }
-  #filters {
-    /* Add any styles for the filters container if needed */
-}
+ 
 
 #filters .filter {
     text-align: center;
     padding: 10px;
-    margin: 10px;
+     
     transition: transform 0.3s ease;
 }
 
@@ -96,7 +94,7 @@ border-bottom: 3px solid #683193; /* Adjust the styling as needed */
       </div>
     </a>
     <a href="/listings/filter/3">
-      <div class="filter" id="filter-iconic-cities" data-category="Iconic-Cities">
+      <div class="filter" id="filter-iconic-cities" data-category="Cities">
         <div><i class="fa-solid fa-city"></i></div>
         <p>Cities</p>
       </div>
@@ -108,43 +106,43 @@ border-bottom: 3px solid #683193; /* Adjust the styling as needed */
       </div>
     </a>
     <a href="/listings/filter/5">
-      <div class="filter" id="filter-all" data-category="All">
+      <div class="filter" id="filter-all" data-category="Castles">
         <div><i class="fa-brands fa-fort-awesome"></i></div>
         <p>Castles</p>
       </div>
     </a>
     <a href="/listings/filter/6">
-      <div class="filter" id="filter-all" data-category="All">
+      <div class="filter" id="filter-all" data-category="Beach">
         <div><i class="fa-solid fa-umbrella-beach"></i></div>
         <p>Beach</p>
       </div>
     </a>
     <a href="/listings/filter/7">
-      <div class="filter" id="filter-all" data-category="All">
+      <div class="filter" id="filter-all" data-category="Camping">
         <div><i class="fa-solid fa-tents"></i></div>
         <p>Camping</p>
       </div>
     </a>
     <a href="/listings/filter/8">
-      <div class="filter" id="filter-all" data-category="All">
+      <div class="filter" id="filter-all" data-category="Skiing">
         <div><i class="fa-solid fa-person-skiing"></i></div>
         <p>Skiing</p>
       </div>
     </a>
     <a href="/listings/filter/9">
-      <div class="filter" id="filter-all" data-category="All">
+      <div class="filter" id="filter-all" data-category="Pools">
         <div><i class="fa-solid fa-person-swimming"></i></div>
         <p>Pools</p>
       </div>
     </a>
     <a href="/listings/filter/10">
-      <div class="filter" id="filter-all" data-category="All">
+      <div class="filter" id="filter-all" data-category="Arctic">
         <div><i class="fa-solid fa-snowflake"></i></div>
         <p>Arctic</p>
       </div>
     </a>
     <a href="/listings/filter/11">
-      <div class="filter" id="filter-all" data-category="All">
+      <div class="filter" id="filter-all" data-category="Design">
         <div><i class="fa-solid fa-building"></i></div>
         <p>Design</p>
       </div>
@@ -201,8 +199,25 @@ border-bottom: 3px solid #683193; /* Adjust the styling as needed */
       if(info.style.display != "inline") {
         info.style.display = "inline";
       } else {
-        info.style.display = "none";
+         info.style.display = "none";
       }     
     }
   });
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all filter elements
+    const filters = document.querySelectorAll('.filter');
+
+    // Add click event listener to each filter
+    filters.forEach(filter => {
+      filter.addEventListener('click', function () {
+        // Remove 'selected-filter' class from all filters
+        filters.forEach(f => f.classList.remove('selected-filter'));
+
+        // Add 'selected-filter' class to the clicked filter
+        this.classList.add('selected-filter');
+      });
+    });
+  });
+
+   
 </script>
