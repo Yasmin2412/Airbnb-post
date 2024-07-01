@@ -28,6 +28,24 @@
       <div class="mb-3 col-md-4">
         <label for="price" class="form-lable">Price</label>
         <input name="listing[price]" value="<%= listing.price %>" type="number" class="form-control" required/>
+        <div class="invalid-feedback">Price should be valid</div>
+      </div>
+      <div class="mb-3 col-md-8">
+        <label for="category" class="form-label">Category</label>
+        <select name="listing[category]" class="form-select">
+          <option value="1">Trending</option>
+            <option value="2">Rooms</option>
+            <option value="3">Cities</option>
+            <option value="4">Mountains</option>
+            <option value="5">Castles</option>
+            <option value="6">Beach</option>
+            <option value="7">Camping</option>
+            <option value="8">Skiing</option>
+            <option value="9">Pools</option>
+            <option value="10">Arctic</option>
+            <option value="11">Design</option>
+        </select>
+        <div class="invalid-feedback">Please select a category</div>
       </div>
       <div class="mb-3 col-md-8">
         <label for="country" class="form-lable">Country</label>

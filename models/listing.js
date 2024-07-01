@@ -36,9 +36,9 @@ const listingSchema = new Schema({
             coordinates: {
               type: [Number],
               required: true,
-            }
-          }
-
+            },
+          },
+          category: Number,
 });
 
 listingSchema.post("findOneAndDelete", async (listing) => {
