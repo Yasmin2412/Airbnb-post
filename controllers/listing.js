@@ -91,3 +91,23 @@ module.exports.destroyListing = async (req, res) => {
     req.flash("success", "Listing Deleted!");
     res.redirect("/listings");
   };
+
+  module.exports.filter = async(req,res,next)=>{
+    // let {q} = req.query;
+    let {id} = req.params;
+    let allListings = await Listing.find({category: id});
+    // console.log(allListing)
+    if(allListings.length != 0){
+        res.render("listings/index.ejs", { allListings });
+    }else{
+        req.flash("error","Listings is not here")
+        res.redirect("/listings")
+    }
+}
+
+module.exports.search = async (req, res) => {
+    let { title } = req.query;
+  
+    const allListings = await Listing.find({ title });
+    res.render("./listings/index.ejs", { allListings });
+};

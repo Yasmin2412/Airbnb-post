@@ -13,8 +13,8 @@ const upload = multer({ storage });
 
 
 
-router.get("/filter/:id",wrapAsync(listingController.filter));
-router.get("/search", wrapAsync(listingController.search));
+router.get("/filter/:id",wrapAsync(lisitngController.filter));
+router.get("/search", wrapAsync(lisitngController.search));
  
 
 //Index Route or Create Route
