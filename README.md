@@ -1,7 +1,7 @@
 
 # Wander-Lust 📝
 
-<img src="/css/icon.png" alt="Wander-Lust" width="35" height="35">
+<img src="/Screenshots/icon.png" alt="Wander-Lust" width="35" height="35">
  
 
 ## Overview 🌟
@@ -23,65 +23,68 @@ This README file provides detailed information on how to use the app effectively
 ## Features 🚀
 
 🔍 Search and Filter: Search for hotels and filter results by categories such as mountains or other preferences.
+
 🔐 User Authorization: Secure access to reviews and other features through user authorization.
+
 📝 Reviews: Read and leave reviews to help make informed decisions.
+
 🗺️ Map Integration: View hotel locations on an integrated map for better planning.
  
-Screenshots 📸
+## Screenshots 📸
 
-<img src="/css/Overview.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Overview.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Overview in full-screen.
 
-<img src="/css/Fsearch.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Fsearch.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Filter Search.
 
-<img src="/css/Signup.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Signup.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing SignUp Page.
 
-<img src="/css/Login.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Login.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Login Page.
 
-<img src="/css/Create.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Create.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Create Listing.
 
-<img src="/css/Lidetails.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Lidetails.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Listing Details.
 
-<img src="/css/Edit.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Edit.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Edit Functionality.
 
-<img src="/css/Review.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Review.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Review.
 
-<img src="/css/SMap.JPG" alt="Wander-Lust">
+<img src="/Screenshots/SMap.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Map.
 
-<img src="/css/Fmap.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Fmap.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Full-Screen Map.
 
-<img src="/css/Footer.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Footer.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Footer.
 
-<img src="/css/Responsivee.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Responsivee.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Responsiveness.
 
-<img src="/css/Mresm.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Mresm.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Small Screen Map.
 
-<img src="/css/Lres.JPG" alt="Wander-Lust">
+<img src="/Screenshots/Lres.JPG" alt="Wander-Lust">
 
 Screenshot of the Wander-Lust app showing Small Screen Listing.
 
@@ -119,7 +122,7 @@ Screenshot of the Wander-Lust app showing Small Screen Listing.
 
 ## Try it Online 💻
 
- You can try the Wander-Lust application online by following this link: [My Wander-Lust To Do List](https://azads-wander-lust.onrender.com/listings)
+ You can try the Wander-Lust application online by following this link: [My Wander-Lust](https://azads-wander-lust.onrender.com/listings)
 
 
 ## Feedback and Support 💌
