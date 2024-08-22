@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Wander-Lust 📝
 
@@ -130,3 +131,7 @@ Screenshot of the Wander-Lust app showing Small Screen Listing.
 Thank you for using My Wander-Lust app. We hope it helps you stay organized and productive. Your feedback is valuable to us. If you have any suggestions, encounter issues, or need assistance, please feel free to contact the developer, Md Azad, at azadm0705@gmail.com. We are committed to continuously improving your experience.
 
 Happy Listing! 😊
+=======
+# Airbnb-post
+Project -1
+>>>>>>> 03ec9bd97cc20677f5dd05e8ea0b10a312d46d36
